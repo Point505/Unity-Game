@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2343118395943564933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2343118395943564955}
+  - component: {fileID: 2343118395943564954}
+  - component: {fileID: 2343118395943564952}
+  m_Layer: 5
+  m_Name: SpawnPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2343118395943564955
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2343118395943564933}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &2343118395943564954
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2343118395943564933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100, y: 3, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2343118395943564952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2343118395943564933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e38704de382d6834cb135cf9fea855f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 4154450492844469266, guid: 04750d9fc93d7684ab70b882598724fe, type: 3}
+  - {fileID: 5689879143212476206, guid: 49a5e2b744bbe30419b6075bcb8f30b9, type: 3}
+  - {fileID: 200420623740968097, guid: ebdfa37b3f4f2724484f26c2b5ede7e0, type: 3}
+  - {fileID: 4014477010005819364, guid: fc50a5fa910cbe14fad02055b45a0797, type: 3}
+  - {fileID: 1272827357958224603, guid: 8d3faa3ae92a1004fb946e12cc629ba7, type: 3}
+  - {fileID: 6988288032691327996, guid: 9080100aec55c8a4cbd9289ea65ed42c, type: 3}
+  - {fileID: 4113939017787358909, guid: 5dc1e32ca76780f43917817061184144, type: 3}
+  - {fileID: 6440602532407885385, guid: 17354cd7128a895458b9136f48157da6, type: 3}
+  - {fileID: 8210010370034170068, guid: 0de5e03ef94a8c54f8389a1e384abb3c, type: 3}
+  - {fileID: 5822266558719825714, guid: cfad4470f62d44342976409591119cf4, type: 3}
+  - {fileID: 4102281839687087429, guid: 0ade6662cd0946d4482a7959dec8baf5, type: 3}
+  - {fileID: 6042202958968079275, guid: ec5748a51386bb742afb1a3832b0b772, type: 3}
+  - {fileID: 6470649200568067474, guid: 49a39cb8608f6f24589748e1ff2b38b1, type: 3}
+  - {fileID: 5503755626608379992, guid: 751fe56c64e05ff4a8e92f76016d454b, type: 3}
+  - {fileID: 4389075812037439580, guid: d8bb81747bf54dd458c05512ae52116d, type: 3}
+  - {fileID: 453447065454462280, guid: da477a6c692d88545a485feed8bdbee1, type: 3}
+  - {fileID: 2819132836217080307, guid: 40ee82e9a570c89478424d99ab380327, type: 3}
+  - {fileID: 1604593487767104491, guid: f8373ee833f9de74a8db73d6539fbcc2, type: 3}
+  - {fileID: 156078267022484348, guid: f4fcefd25111bdc4f87c31fd5cc898cc, type: 3}
+  - {fileID: 563126830006560722, guid: 9a6b0d2457ed47b4da223577b3c8ac7a, type: 3}
+  - {fileID: 8257882287632973139, guid: 7bbab49244b957b439d00dfdd610bdcf, type: 3}
+  - {fileID: 2643375890228766310, guid: 7b7480027d070704489b52cef1e3e39d, type: 3}
+  - {fileID: 3778558941286574715, guid: a8ffa666308f3474498dd3131ef4f383, type: 3}
+  - {fileID: 3907600878123552693, guid: 907dcdaedecc1fb4d8c20257e1eb19f7, type: 3}
+  - {fileID: 8632880953702590164, guid: fc92673eafb789b4587149a53d824219, type: 3}
+  - {fileID: 2454405920199242060, guid: f5549882375e0e64099715c22f155b5c, type: 3}
+  count: 10
