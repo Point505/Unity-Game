@@ -31,8 +31,8 @@ public class CameraMovement : MonoBehaviour
         rotY = transform.localRotation.eulerAngles.y;
 
 
-        dirNormalized = realCamera.localPosition.normalized;
-        finalDistance = realCamera.localPosition.magnitude;
+        dirNormalized = realCamera.localPosition.normalized;// 모든 방향을 1로 정의 어떤 방향이든 속도를 균일하게
+        finalDistance = realCamera.localPosition.magnitude;// 벡터길이 변환 각각이 가지고 있는 속도로
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -52,7 +52,7 @@ public class CameraMovement : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, objectTofollow.position, followSpeed * Time.deltaTime);
+       transform.position = Vector3.MoveTowards(transform.position, objectTofollow.position, followSpeed * Time.deltaTime);
         finalDir = transform.TransformPoint(dirNormalized * maxDistance);
 
         RaycastHit hit;
@@ -62,11 +62,12 @@ public class CameraMovement : MonoBehaviour
             finalDistance = Mathf.Clamp(hit.distance, minDistance, maxDistance);
 
         }
-        else {
+        else
+        {
             finalDistance = maxDistance;
         }
 
         realCamera.localPosition = Vector3.Lerp(realCamera.localPosition, dirNormalized * finalDistance, Time.deltaTime * smoothness);
-        
+
     }
 }
